@@ -6,3 +6,436 @@
 	Description: Portfolio Theme
 	Version: 1.0 alpha
 */
+
+/***************  global******************/
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Arimo', sans-serif;
+	font-weight: 700;
+}
+p {
+	font-family: 'Arimo', sans-serif;
+	font-size: 1.2em;
+}
+.font-family{
+	font-family: 'Arimo', sans-serif;
+	font-weight: 700;
+}
+.small-font-family {
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+	color: rgba(151,151,151,.7);
+	
+}
+a {
+	color: #222;
+	background: transparent;
+	text-decoration:none;
+}
+/************* New Navigation ***************/
+.class-white {
+    background-color: #fff;
+    border-color: ;
+}
+.navbar-inverse {
+     background-color: #fff; 
+    border-color: #080808;
+}
+
+.navbar-brands {
+    float: left;
+    height: 50px;
+    padding: 34px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.nav {
+    padding: 25px 0px 0px 0px;
+}
+.nav .navbar-nav .navbar-right>li>a:hover {
+    padding-top: 15px;
+    padding-bottom: 15px;
+	background-color: #fff;
+}
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 51px;
+}
+.nav li a:hover {
+	background-color: #fff;
+}
+.nav li a {
+    position: relative;
+    text-decoration: uppercase;
+    padding: 10px 22px;
+    color: #222;
+	font-size: 16px;
+	font-family: 'Arimo', sans-serif;
+}
+.nav li a:hover {
+   color: gray;
+}
+a:hover {
+	color: gray;
+}
+.navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 44px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: #222;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.navbar-toggle .icon-bar {
+	background-color:#fff;
+}
+
+
+@media only screen and (max-width: 767px) {
+.black-background {
+    background-color: #222;
+	color:#fff;
+}
+.navbar-collapse {
+    padding-right: 15px;
+    padding-left: 15px;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;
+    border-top: 1px solid transparent;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    background-color: #222;
+    margin-top: 5px;
+}
+.nav li a {
+    position: relative;
+    text-decoration: uppercase;
+    padding: 5px 22px;
+    color: #fff;
+	font-size: 16px;
+	font-family: 'Arimo', sans-serif;
+	text-align: center;
+}
+.nav li a:hover {
+    position: relative;
+    text-decoration: uppercase;
+    padding: 5px 22px;
+    color:none;
+	background-color: none;
+	font-size: 16px;
+	font-family: 'Arimo', sans-serif;
+	text-align: center;
+}	
+.navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 35px;
+}
+.nav li:hover {
+		background-color:none;
+	}
+
+	
+}
+
+/************ Headings *******************/
+.main-hero{
+	padding-top: 110px;
+}
+
+
+
+/************ The Work Sections *******************/
+.portfolio-work {
+	margin-top: 20px;
+}
+.grid-sizer{ 
+	width: 100%;
+	margin: 25px;
+}
+.grid-item { 
+	width: 100%;
+	overflow: hidden;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Common style */
+.grid-image figure {
+	position: relative;
+	float: left;
+	overflow: hidden;
+	margin: 10px 0%;
+	min-width: 300px;
+	max-width: 650px;
+	max-height: 600px;
+	width: 100%;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+}
+
+.grid-image figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+}
+
+.grid-image figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid-image figure figcaption::before,
+.grid-image figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid-image figure figcaption,
+.grid-image figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid-image figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid-image figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid-image figure h2 span {
+	font-weight: 800;
+}
+
+.grid-image figure h2,
+.grid-image figure p {
+	margin: 0;
+}
+
+.grid-image figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+/***** Bubba *****/
+
+figure.effect-bubba {
+	background: #fff;
+}
+
+figure.effect-bubba img {
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+figure.effect-bubba:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-bubba figcaption::before,
+figure.effect-bubba figcaption::after {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-bubba figcaption::before {
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: scale(0,1);
+	transform: scale(0,1);
+}
+
+figure.effect-bubba figcaption::after {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #fff;
+	-webkit-transform: scale(1,0);
+	transform: scale(1,0);
+}
+
+figure.effect-bubba h2 {
+	padding-top: 30%;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,-20px,0);
+	transform: translate3d(0,-20px,0);
+}
+
+figure.effect-bubba p {
+	padding: 20px 2.5em;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-bubba:hover figcaption::before,
+figure.effect-bubba:hover figcaption::after {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+figure.effect-bubba:hover h2,
+figure.effect-bubba:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+
+.clients{
+	margin-top: 20px;
+}
+/************ Contact Page ***************/
+.contact-background{
+	margin-top: 20px;
+	color: #fff
+}
+.contact-background img{
+	position:relative;
+}
+ .img-contact{
+	color: #fff;
+	background-image: url(../img/contact-background.jpg);
+	background-repeat: no-repeat;
+	height: 500px;
+	width: 100%;
+}
+.contact-form {
+	margin-top: 40px;
+}
+input[type=text] {
+    padding: 15px;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    color: #444;
+    border: 0;
+    background: #f6f6f6;
+    border-radius: 2px;
+	margin: 10px 0px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+input[type=text]:focus {
+    border-color: #222;
+}
+textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 15px;
+    border: 0;
+   margin: 10px 0px;
+    background: #f6f6f6;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+	height: 175px;
+}
+
+textarea {
+    overflow: auto;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    font-family: inherit;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #fff;
+    background: #222;
+    padding: 1.4em 2.5em;
+    border: 0;
+	width: 100%;
+    margin: 15px 0 0;
+    -webkit-transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+    -moz-transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+    -o-transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+    -ms-transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+    transition: background-color 250ms linear, border 250ms linear, color 250ms linear;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+}
+/************** porfolio pages *************/
+.spacing{
+	margin-top: 50px;
+}
+.intro-text {
+	margin-top: 20px;
+}
+.list-portfolio li span {
+    color: #000;
+    font-weight: bold;
+    min-width: 160px;
+
+    display: inline-block;
+}
+.list-portfolio {
+    padding: 10px 0;
+}
+.list-portfolio li {
+    display: inline-block;
+    width: 100%;
+    line-height: 24px;
+    padding: 8px 0;
+	font-size: 1.1em;
+}
+.single-postfolio img {
+    max-width: 100%;
+    height: auto !important;
+}
+.single-portfolio p {
+	font-size: 1.1em;
+}
+/************ Footer *******************/
+.footer{
+	margin-top: 50px;
+    color: #fff;
+    background-color: #222;
+    padding: 32px 0px;
+}
+
+.footer p {
+	font-size: .9em;
+	margin-top: 15px;
+}

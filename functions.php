@@ -1,5 +1,8 @@
 <?php 
 
+
+
+//css styles
 function portfolio_theme_styles() {
 	
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );
@@ -14,8 +17,25 @@ add_action( 'wp_enqueue_scripts', 'portfolio_theme_styles');
 function portfolio_theme_js() {
 	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js' );
   	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js' );
+	
 
 }
 add_action( 'wp_enqueue_scripts', 'portfolio_theme_js');
+
+
+//add theme support
+add_theme_support('menus');
+
+
+function portfolio_register_theme_menus() {
+  register_nav_menus(
+    array(
+      'primary-menu' => __( 'Primary Menu' ),
+    )
+  );
+}
+
+add_action( 'init', 'portfolio_register_theme_menus');
+
 
 ?>
