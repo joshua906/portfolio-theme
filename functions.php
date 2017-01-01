@@ -9,10 +9,10 @@ require get_template_directory() . '/inc/ajax.php';
 //css styles
 function portfolio_theme_styles() {
 	
-  wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );
+
 	 wp_enqueue_style( 'bootstrap_min_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
-	 wp_enqueue_style( 'bootstrap-theme_css', get_template_directory_uri() . '/css/bootstrap-theme.css' );
-	 wp_enqueue_style( 'bootstrap-theme-min_css', get_template_directory_uri() . '/css/bootstrap-theme.min.css' );
+
+	
 	 wp_enqueue_style( 'portfolio_css', get_template_directory_uri() . '/style.css' );
   
 }
@@ -20,8 +20,8 @@ add_action( 'wp_enqueue_scripts', 'portfolio_theme_styles');
 
 function portfolio_theme_js() {
 	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js' );
-  	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js' );
-	  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js (1)' );
+  	  wp_enqueue_script( 'jquery' );
+	  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	  wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array('jquery'), '1.0.0', true );
 	
 
