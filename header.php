@@ -1,11 +1,10 @@
 <!doctype html>
-<html>
+<html <?php language_attributes(); ?>>
 <head>
-<meta charset="utf-8">
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Matthews Portfolio</title>
+<title><?php bloginfo( 'name' ); ?></title>
 
 <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700" rel="stylesheet">
 <?php wp_head(); ?>
