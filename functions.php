@@ -1,6 +1,9 @@
 <?php 
 
+// Get other template files
 
+require get_template_directory() . '/inc/function-admin.php';
+require get_template_directory() . '/inc/custom-post-type.php';
 
 //css styles
 function portfolio_theme_styles() {
@@ -72,6 +75,7 @@ function portfolio_custom_post_type() {
 		'rewrite' => true,
 		'capability_type' => 'post',
 		'hierarchical' => false,
+		'menu_icon'			=> 'dashicons-portfolio',
 		'supports' => array(
 			'title',
 			'editor',
