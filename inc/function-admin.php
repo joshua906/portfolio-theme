@@ -54,7 +54,11 @@ function portfolio_activate_contact() {
 
 
 
+//Template submenu functions
 
+function portfolio_contact_form_page() {
+	require_once( get_template_directory() . '/inc/templates/portfolio-contact-form.php' );
+}
 
 
 
