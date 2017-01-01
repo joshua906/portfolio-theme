@@ -4,6 +4,7 @@
 
 require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/custom-post-type.php';
+require get_template_directory() . '/inc/ajax.php';
 
 //css styles
 function portfolio_theme_styles() {
@@ -21,6 +22,7 @@ function portfolio_theme_js() {
 	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.js' );
   	  wp_enqueue_script( 'bootstrap_js', get_template_directory_uri() . '/js/bootstrap.min.js' );
 	  wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.1.1.min.js (1)' );
+	  wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array('jquery'), '1.0.0', true );
 	
 
 }
