@@ -1,22 +1,19 @@
 <?php get_header(); ?>
 
-<h1>Front page</h1>
-
-	<?php get_header(); ?>
-
-	<?php 
-	
-	if( have_posts() ):
-		
-		while( have_posts() ): the_post(); ?>
-			
-			<?php get_template_part('content',get_post_format()); ?>
-		
-		<?php endwhile;
-		
-	endif;
-			
-	?>
+<!-- Home header -->
+		<div class="main-hero">
+			<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<div class="">
+						<h4 class="font-family fadeInUp">Welcome! I'm Joshua Matthews, UI Designer and Front End Developer</h4>
+						<h1 class="font-family"> I craft digital innovations that help brands <span>Stand Out.</span></h1>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
 
 
 <?php get_footer(); ?>
