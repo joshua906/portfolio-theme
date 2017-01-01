@@ -92,6 +92,9 @@ get_header(); ?>
 
 		</div>
 		</div>
+		
+		
+<div class="container">
 <?php 
 		
 	$args = array('post_type' => 'portfolio', 'post_per_page' => 3 );
@@ -108,5 +111,6 @@ get_header(); ?>
 	endif;
 			
 	?>
+</div>
 	
 <?php get_footer(); ?>
