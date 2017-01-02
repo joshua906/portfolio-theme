@@ -74,5 +74,69 @@ function portfolio_contact_custom_column( $column, $post_id ){
 	
 }
 
+//Contact Meta Boxes
+function portfolio_contact_add_meta_box() {
+	add_meta_box( 'contact_email', 'User Email', 'portfolio_contact_email_callback', 'portfolio-contact', 'side' );
+}
+function portfolio_contact_email_callback( $post ) {
+	wp_nonce_field( 'portfolio_save_contact_email_data', 'portfolio_contact_email_meta_box_nonce' );
+	
+	$value = get_post_meta( $post->ID, '_contact_email_value_key', true );
+	
+	echo '<label for="portfolio_contact_email_field">User Email Address: </lable>';
+	echo '<input type="email" id="portfolio_contact_email_field" name="portfolio_contact_email_field" value="' . esc_attr( $value ) . '" size="25" />';
+}
+
+
+function portfolio_save_contact_email_data( $post_id ) {
+	
+	if( ! isset( $_POST['portfolio_contact_email_meta_box_nonce'] ) ){
+		return;
+	}
+	
+	if( ! wp_verify_nonce( $_POST['portfolio_contact_email_meta_box_nonce'], 'portfolio_save_contact_email_data') ) {
+		return;
+	}
+	
+	if( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE ){
+		return;
+	}
+	
+	if( ! current_user_can( 'edit_post', $post_id ) ) {
+		return;
+	}
+	
+	if( ! isset( $_POST['portfolio_contact_email_field'] ) ) {
+		return;
+	}
+	
+	$my_data = sanitize_text_field( $_POST['portfolio_contact_email_field'] );
+	
+	update_post_meta( $post_id, '_contact_email_value_key', $my_data );
+	
+}
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
