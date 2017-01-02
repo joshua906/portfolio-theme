@@ -15,6 +15,9 @@ if( @$contact == 1 ){
 	add_filter('manage_portfolio-contact_posts_columns', 'portfolio_contact_columns');
 	
 	add_action( 'manage_portfolio-contact_posts_custom_column', 'portfolio_contact_custom_column', 10, 2 );
+	
+	add_action( 'add_meta_boxes', 'portfolio_contact_add_meta_box' );
+	add_action( 'save_post', 'portfolio_save_contact_email_data' );
 }
 /* CONTACT CPT */
 function portfolio_contact_custom_post_type() {
