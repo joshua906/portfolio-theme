@@ -65,6 +65,11 @@ function portfolio_contact_custom_column( $column, $post_id ){
 			//email column
 			echo 'email address';
 			break;
+			
+			case 'company' :
+			//email column
+			echo 'company';
+			break;
 	}
 	
 }

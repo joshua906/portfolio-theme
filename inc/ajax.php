@@ -1,7 +1,7 @@
 <?php
 /*
 	
-@package sunsettheme
+@package matthewsportfolio
 	
 	========================
 		AJAX FUNCTIONS
@@ -117,6 +117,23 @@ function portfolio_save_contact(){
 	$company = wp_strip_all_tags($_POST["company"]);
 	$message = wp_strip_all_tags($_POST["message"]);
 	echo $title . ',' . $email . ',' .$message;
+	
+  $args = array(
+        'post_title' => $title,
+        'post_content' => $message,
+	  	'post_company' => $company,
+        'post_author' => 1,
+        'post_status' => 'publish',
+        'post_type' => 'portfolio-contact',
+        'meta_input' => array(
+            '_contact_email_value_key' => $email,
+        ),
+    );
+    $postID = wp_insert_post($args);
+    echo $postID;
+
+	
+	
 	//wp_insert_post();
 	die();
 }

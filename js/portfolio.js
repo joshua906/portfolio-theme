@@ -3,13 +3,14 @@
 jQuery(document).ready( function($){
 	
 	/*Contact Form submission*/
-	$(portfolioContactForm).on('submit', function(e){
+	$('#portfolioContactForm').on('submit', function(e){
 		
-		e.preventBehavior();
+		e.preventDefault();
 		
 		var form = $(this),
 				name = form.find('#name').val(),
 				email = form.find('#email').val(),
+				company = form.find('#company').val(),
 				message = form.find('#message').val(),
 				ajaxurl = form.data('url');
 		
@@ -27,6 +28,7 @@ jQuery(document).ready( function($){
 				
 				name : name,
 				email : email,
+				company : company,
 				message : message,
 				action: 'portfolio_save_user_contact_form'
 				
@@ -35,7 +37,11 @@ jQuery(document).ready( function($){
 				console.log(response);
 			},
 			success : function( response ){
-				console.log(response);
+				if(response === 0) {
+					console.log('Unable to save your message, please try again!');
+				}else{ 
+					console.log('Message Saved, thank you!')
+				}
 			}
 			
 		});
@@ -43,7 +49,7 @@ jQuery(document).ready( function($){
 	});
 	
 	
-	});
+	
 	
 	
 	
