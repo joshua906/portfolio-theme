@@ -441,6 +441,11 @@ input[type=submit] {
 .ms-item {
 width: 50%;
 }
+@media only screen and (max-width: 500px) {
+.ms-item {
+	width: 100%;
+  }
+}
 /************ Footer *******************/
 .footer{
 	margin-top: 50px;
