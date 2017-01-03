@@ -9,7 +9,7 @@ require get_template_directory() . '/inc/ajax.php';
 //css styles
 function portfolio_theme_styles() {
 	
-
+		
 	 wp_enqueue_style( 'bootstrap_min_css', get_template_directory_uri() . '/css/bootstrap.min.css' );
 
 	
@@ -23,6 +23,8 @@ function portfolio_theme_js() {
 	wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array('jquery'), '1.0.0', true );
   	  wp_enqueue_script( 'jquery' );
 	  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
+	wp_enqueue_script( 'masonry' );
+	wp_enqueue_script( 'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );
 	  
 	
 

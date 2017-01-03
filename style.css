@@ -322,7 +322,15 @@ figure.effect-bubba:hover p {
 	margin-top: 20px;
 }
 /************ Contact Page ***************/
-
+ .form-control-msg {
+	display:none;
+}
+.has-error{
+	display:block;
+}
+.js-show-feedback {
+	display: block;
+}
 .contact-background{
 	margin-top: 20px;
 	color: #fff
@@ -427,6 +435,11 @@ input[type=submit] {
 }
 .single-portfolio p {
 	font-size: 1.1em;
+}
+
+/* Makes two columns */
+.ms-item {
+width: 50%;
 }
 /************ Footer *******************/
 .footer{

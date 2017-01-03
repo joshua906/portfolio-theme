@@ -33,18 +33,30 @@
 						
 						<div class="form-group">
 							<div class="row">
-								<div class="col-md-6"><input type="text" name="Name" placeholder="name" id="name" required="required"><br></div>
-								<div class="col-md-6"><input type="text" name="email" placeholder="email" id="email" required="required"></div>	
+							
+								<div class="col-md-6">
+									<input type="text" class="" name="Name" placeholder="name" id="name">
+									<div class="form-control-msg text-danger">Your Name is Required</div>
+									<br>
+								</div>
+								
+								<div class="col-md-6">
+									<input type="text" name="email" placeholder="email" id="email">
+									
+								</div>	
+								
 							</div>
-						</div>
-						
-						<div class="form-group">
-							<input type="text" name="company" placeholder="company" id="company" required=""><br>
-							<textarea type="text" name="message" placeholder="message" id="message" required="required"></textarea><br>
-						</div>	
+					
+							<input type="text" name="company" placeholder="company" id="company"><br>
+							<textarea type="text" name="message" placeholder="message" id="message"></textarea><br>
+							
 						
 						
 						<input type="submit" value="SEND MESSAGE">
+						<div class="form-control-msg js-form-submission">Submission in process, please wait..</div>
+	<div class="form-control-msg js-form-success">Message Successfully submitted, thank you!</div>
+	<div class="form-control-msg js-form-error">There was a problem with the Contact Form, please try again!</div>
+					</div>
 						</form>
 						</div>
 					

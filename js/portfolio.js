@@ -1,11 +1,24 @@
 // JavaScript Document
 
 jQuery(document).ready( function($){
+	///masonry layout
+	
+	var container = document.querySelector('#ms-container');
+      var msnry = new Masonry( container, {
+        itemSelector: '.ms-item',
+        columnWidth: '.ms-item',                
+      });  
+      
 	
 	/*Contact Form submission*/
 	$('#portfolioContactForm').on('submit', function(e){
 		
 		e.preventDefault();
+		
+		$('.has-error').removeClass('has-error');
+		$('.js-show-feedback').removeClass('js-show-feedback');
+		
+		
 		
 		var form = $(this),
 				name = form.find('#name').val(),
@@ -14,11 +27,27 @@ jQuery(document).ready( function($){
 				message = form.find('#message').val(),
 				ajaxurl = form.data('url');
 		
-		if( name === '' || email === '' || message === '' || company === ''){
-			console.log('Required inputs are empty');
+		if( name === '' ){
+			$('#name').parent('.form-group').addClass('has-error');
 			return;
-		
 		}
+		
+		
+		if( email === '' ){
+			$('#email').parent('.contact-form').addClass('has-error');
+			return;
+		}
+
+		if( message === '' ){
+			$('#message').parent('.contact-form').addClass('has-error');
+			return;
+		}
+		
+		
+		
+		form.find('input, button, textarea').attr('disabled','disabled');
+		$('.js-form-submission').addClass('js-show-feedback');
+		
 		
 		$.ajax({
 			
@@ -40,7 +69,7 @@ jQuery(document).ready( function($){
 				if(response === 0) {
 					console.log('Unable to save your message, please try again!');
 				}else{ 
-					console.log('Message Saved, thank you!')
+					console.log('Message Saved, thank you!');
 				}
 			}
 			
