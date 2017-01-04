@@ -33,9 +33,12 @@ a {
 	text-decoration:none;
 }
 /************* New Navigation ***************/
+.top-pad {
+	padding-top: 30px;
+}
 .class-white {
     background-color: #fff;
-    border-color: ;
+    
 }
 .navbar-inverse {
      background-color: #fff; 
@@ -154,6 +157,13 @@ a:hover {
 .portfolio-work {
 	margin-top: 20px;
 }
+.item wrapper{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
 .grid-sizer{ 
 	width: 100%;
 	margin: 25px;
@@ -187,8 +197,8 @@ a:hover {
 .grid-image figure img {
 	position: relative;
 	display: block;
-	min-height: 100%;
-	max-width: 100%;
+	height: 100%;
+	width: 100%;
 	opacity: 0.8;
 }
 
@@ -441,7 +451,7 @@ input[type=submit] {
 .ms-item {
 width: 50%;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 660px) {
 .ms-item {
 	width: 100%;
   }

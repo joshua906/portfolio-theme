@@ -39,8 +39,10 @@ get_header(); ?>
 
 					while( $loop->have_posts() ): $loop->the_post(); ?> 
 					<div class="ms-item col-xs-12 col-md-6">
+					<div class="item-wrapper">
 
 						<?php get_template_part('content-portfolio', 'archive'); ?>
+					</div>
 					</div>
 					<?php endwhile;
 
