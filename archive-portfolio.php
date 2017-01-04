@@ -8,7 +8,7 @@
 			<?php while ( have_posts() ) : the_post(); ?>
 	        	<div class="ms-item col-xs-12 col-sm-6 col-md-6 col-lg-6">
 	        	
-					<p>hey what is this doing here</p>
+					<p></p>
 	                        <h4><?php the_title(); ?></h4>
 	                        <p><?php the_excerpt(); ?></p>
 	                      
