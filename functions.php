@@ -108,13 +108,29 @@ function portfolio_custom_taxonomies() {
 		'all_items' => 'All Items',
 		'parent_items' => 'Parent Type',
 		'parent_item_colon' => 'Parent Type:',
-		'edit_item' => 'Edit Type''
-		''
+		'edit_item' => 'Edit Type',
+		'update_item' => 'Update Type',
+		'add_new_item' => 'Add New Item',
+		'new_item_name' => 'New Type Name',
+		'menu_name' => 'Type',
 		
 	);
+	
+	$args = array(
+		'hierarchical' => true,
+		'labels' => $labels,
+		'show_ui' => true,
+		'show_admin_column' => true,
+		'query_var' => true,
+		'rewrite' => array('slug' => 'type'),
+		
+	);
+	
+	register_taxonomy('type', array('portfolio'), $args);
+	
 }
 
-
+add_action('init', 'portfolio_custom_taxonomies');
 
 
 
