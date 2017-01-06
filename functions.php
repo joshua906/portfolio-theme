@@ -98,7 +98,21 @@ function portfolio_custom_post_type() {
 }
 add_action('init','portfolio_custom_post_type');
 
+/// custom taxonomies
 
+function portfolio_custom_taxonomies() {
+	$labels = array(
+		'name' => 'Types',
+		'singular_name' => 'Type',
+		'search_items'=> 'Search Types',
+		'all_items' => 'All Items',
+		'parent_items' => 'Parent Type',
+		'parent_item_colon' => 'Parent Type:',
+		'edit_item' => 'Edit Type''
+		''
+		
+	);
+}
 
 
 

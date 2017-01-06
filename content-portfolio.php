@@ -12,13 +12,12 @@
 -->
 
 						
-
 						  <div class="grid-image">
 							<figure class="effect-bubba">
-								<!--<img src="<?php echo get_template_directory_uri(); ?>/img/black-image.jpg" width="600" height="450" alt=""/>-->
-								<?php the_post_thumbnail(); ?>
+						
+								<a href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail(); ?> </a>
 								<figcaption>
-									<h2><?php the_title(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?></h2>
+									<h2><!--<?php the_title(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?>--></h2>
 									<p><?php the_excerpt(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?></p>
 									<a href="#">View more</a>
 								</figcaption>			
