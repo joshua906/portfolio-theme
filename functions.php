@@ -52,7 +52,7 @@ add_action( 'init', 'portfolio_register_theme_menus');
 
 
 
-///Custom Post Types
+///Custom Post fields
 
 
 function portfolio_custom_post_type() {
@@ -102,17 +102,17 @@ add_action('init','portfolio_custom_post_type');
 
 function portfolio_custom_taxonomies() {
 	$labels = array(
-		'name' => 'Types',
-		'singular_name' => 'Type',
-		'search_items'=> 'Search Types',
+		'name' => 'Fields',
+		'singular_name' => 'Fields',
+		'search_items'=> 'Search Fields',
 		'all_items' => 'All Items',
-		'parent_items' => 'Parent Type',
-		'parent_item_colon' => 'Parent Type:',
-		'edit_item' => 'Edit Type',
-		'update_item' => 'Update Type',
+		'parent_items' => 'Parent Fields',
+		'parent_item_colon' => 'Parent Fields:',
+		'edit_item' => 'Edit Fields',
+		'update_item' => 'Update Fields',
 		'add_new_item' => 'Add New Item',
-		'new_item_name' => 'New Type Name',
-		'menu_name' => 'Type',
+		'new_item_name' => 'New Fields Name',
+		'menu_name' => 'Fields',
 		
 	);
 	
@@ -122,11 +122,11 @@ function portfolio_custom_taxonomies() {
 		'show_ui' => true,
 		'show_admin_column' => true,
 		'query_var' => true,
-		'rewrite' => array('slug' => 'type'),
+		'rewrite' => array('slug' => 'Fields'),
 		
 	);
 	
-	register_taxonomy('type', array('portfolio'), $args);
+	register_taxonomy('fields', array('portfolio'), $args);
 	
 }
 

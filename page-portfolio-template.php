@@ -42,6 +42,7 @@ get_header(); ?>
 					<div class="item-wrapper">
 
 						<?php get_template_part('content-portfolio', 'archive'); ?>
+						<!--<?php get_template_part('content', 'archive'); ?>-->
 					</div>
 					</div>
 					<?php endwhile;

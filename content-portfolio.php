@@ -8,21 +8,21 @@
 <p><?php the_content(); ?></p>
 
 <hr>
-
 -->
+
 
 						
 						  <div class="grid-image">
 							<figure class="effect-bubba">
 						
-								<a href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail(); ?> </a>
+								 <?php the_post_thumbnail(); ?> 
 								<figcaption>
 									<h2><!--<?php the_title(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?>--></h2>
-									<p><?php the_excerpt(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?></p>
+									<p><?php the_title(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?></p>
 									<a href="#">View more</a>
 								</figcaption>			
 							</figure>
 						  </div>
 
-						
-					 
+						<h3><?php the_title(sprintf('<a href="%s">', esc_url( get_permalink() ) ),'</a>'); ?></h3>
+					
