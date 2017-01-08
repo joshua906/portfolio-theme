@@ -38,7 +38,10 @@ add_theme_support('post-thumbnails');
 add_theme_support('menus');
 add_theme_support('post-formats', array('aside','image','video','audio', 'quote', 'link', 'gallery',));
 
+/// register template types
 
+
+///theme menus
 
 function portfolio_register_theme_menus() {
   register_nav_menus(
@@ -84,6 +87,7 @@ function portfolio_custom_post_type() {
 		'supports' => array(
 			'title',
 			'editor',
+			'content',
 			'excerpt',
 			'thumbnail',
 			'revisions',

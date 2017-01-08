@@ -41,8 +41,8 @@ get_header(); ?>
 					<div class="ms-item col-xs-12 col-md-6">
 					<div class="item-wrapper">
 
-						<?php get_template_part('content-portfolio', 'archive'); ?>
-						<!--<?php get_template_part('content', 'archive'); ?>-->
+						<?php get_template_part('content-portfolio', ''); ?>
+					
 					</div>
 					</div>
 					<?php endwhile;
