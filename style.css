@@ -64,6 +64,8 @@ a {
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 51px;
+	font-weight: 700;
+
 }
 .nav li a:hover {
 	background-color: #fff;
@@ -74,6 +76,7 @@ a {
     padding: 10px 22px;
     color: #222;
 	font-size: 16px;
+	font-weight: 700 !important;
 	font-family: 'Arimo', sans-serif;
 }
 .nav li a:hover {
@@ -104,6 +107,10 @@ a:hover {
     background-color: #222;
 	color:#fff;
 }
+	.black-background:hover {
+    background-color: #222;
+	color:#fff;
+}
 .navbar-collapse {
     padding-right: 15px;
     padding-left: 15px;
@@ -128,8 +135,8 @@ a:hover {
     position: relative;
     text-decoration: uppercase;
     padding: 5px 22px;
-    color:none;
-	background-color: none;
+    color: #fff;
+	background-color: #222;
 	font-size: 16px;
 	font-family: 'Arimo', sans-serif;
 	text-align: center;
