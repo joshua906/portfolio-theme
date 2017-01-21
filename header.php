@@ -10,7 +10,18 @@
 <?php wp_head(); ?>
 </head>
 
+
+
 <body>
+
+<div id="loading">
+<div id="loading-center">
+<div id="loading-center-absolute">
+<div id="object"></div>
+</div>
+</div>
+
+</div>
 <!--Navigation Menu-->
 
 <div class="top-pad">

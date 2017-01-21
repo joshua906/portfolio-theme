@@ -376,8 +376,11 @@ input[type=text] {
     background: #f6f6f6;
     border-radius: 2px;
 	margin: 10px 0px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 input[type=text]:focus {
     border-color: #222;
@@ -402,14 +405,14 @@ textarea {
     margin-top: 10px;
 }
 
-input[type=submit] {
+button {
     font-family: inherit;
     font-size: 11px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     color: #fff;
     background: #222;
-    padding: 1.4em 2.5em;
+    padding: 1.4em 2.5em !important;
     border: 0;
 	width: 100%;
     margin: 15px 0 0;
@@ -422,6 +425,7 @@ input[type=submit] {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
 }
+
 /************** porfolio pages *************/
 .spacing{
 	margin-top: 50px;
@@ -475,3 +479,59 @@ width: 50%;
 	font-size: .9em;
 	margin-top: 15px;
 }
+
+/**************animation preloader*************************/
+
+#loading{
+background-color: #bd4932;
+height: 100%;
+width: 100%;
+position: fixed;
+z-index: 1;
+margin-top: 0px;
+top: 0px;
+}
+
+#loading-center{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#loading-center-absolute {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: 200px;
+	width: 200px;
+	margin-top: -100px;
+	margin-left: -100px;
+}
+#object{
+	width: 80px;
+	height: 80px;
+	background-color: #FFF;
+	-webkit-animation: animate 1s infinite ease-in-out;
+	animation: animate 1s infinite ease-in-out;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+}
+@-webkit-keyframes animate {
+  0% { -webkit-transform: perspective(160px); }
+  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+}
+
+@keyframes animate {
+  0% { 
+    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+  } 50% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+  } 100% { 
+    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+  }
+}
+

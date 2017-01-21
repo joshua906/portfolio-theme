@@ -25,7 +25,7 @@ function portfolio_theme_js() {
 	  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	wp_enqueue_script( 'masonry' );
 	wp_enqueue_script( 'masonry', '//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.js' );
-	  
+	  wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array('jquery') );
 	
 
 }

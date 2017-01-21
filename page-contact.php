@@ -6,7 +6,7 @@
 				<div class="col-md-8">
 					<div class="">
 						<em><h4 class="small-font-family fadeInUp"></h4></em>
-						<h1 class="font-family"> Start your project today</h1>
+						<h1 class=""> Lets build something Great!</h1>
 						<p></p>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 							<div class="row">
 							
 								<div class="col-md-6">
-									<input type="text" class="" name="Name" placeholder="name" id="name">
+									<input type="text" class="" name="name" placeholder="name" id="name">
 									<div class="form-control-msg text-danger">Your Name is Required</div>
 									<br>
 								</div>
@@ -52,13 +52,14 @@
 							
 						
 						
-						<input type="submit" value="SEND MESSAGE">
+							<button type="submit" value="SEND MESSAGE">SEND MESSAGE</button>
+						
 						<div class="form-control-msg js-form-submission">Submission in process, please wait..</div>
-	<div class="form-control-msg js-form-success">Message Successfully submitted, thank you!</div>
-	<div class="form-control-msg js-form-error">There was a problem with the Contact Form, please try again!</div>
+						<div class="form-control-msg js-form-success">Message Successfully submitted, thank you!</div>
+						<div class="form-control-msg js-form-error">There was a problem with the Contact Form, please try again!</div>
 					</div>
-						</form>
-						</div>
+					</form>
+					</div>
 					
 					<div class="col-md-3 col-md-offset-1">
 					<br>
