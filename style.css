@@ -342,9 +342,10 @@ figure.effect-bubba:hover p {
  .form-control-msg {
 	display:none;
 }
-.has-error{
-	display:block;
-}
+.has-error .form-control-msg {
+		display: block;
+	}
+
 .js-show-feedback {
 	display: block;
 }

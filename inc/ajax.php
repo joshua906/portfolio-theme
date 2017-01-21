@@ -12,6 +12,7 @@ add_action( 'wp_ajax_portfolio_load_more', 'portfolio_load_more' );
 
 add_action( 'wp_ajax_nopriv_portfolio_save_user_contact_form', 'portfolio_save_contact' );
 add_action( 'wp_ajax_portfolio_save_user_contact_form', 'portfolio_save_contact' );
+
 function portfolio_load_more() {
 	
 	$paged = $_POST["page"]+1;
@@ -112,6 +113,7 @@ function portfolio_check_paged( $num = null ){
 	
 }
 function portfolio_save_contact(){
+	
 	$title = wp_strip_all_tags($_POST["name"]);
 	$email = wp_strip_all_tags($_POST["email"]);
 	$company = wp_strip_all_tags($_POST["company"]);

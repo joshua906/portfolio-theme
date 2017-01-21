@@ -31,33 +31,42 @@
 					
 						<form action="#" method="post" id="portfolioContactForm" data-url="<?php echo admin_url('admin-ajax.php') ?>">
 						
-						<div class="form-group">
+						
 							<div class="row">
 							
 								<div class="col-md-6">
-									<input type="text" class="" name="name" placeholder="name" id="name">
-									<div class="form-control-msg text-danger">Your Name is Required</div>
+								<div class="form-group-two">
+									<input type="text" class="" name="name" placeholder="name" id="name" >
+									
+									<small class="form-control-msg text-danger">Your Name is Required</small>
+									
 									<br>
+								</div>
 								</div>
 								
 								<div class="col-md-6">
+								<div class="form-group-two">
 									<input type="text" name="email" placeholder="email" id="email">
-									
+									<small class="form-control-msg text-danger">Your Email is Required</small>
+								</div>	
 								</div>	
 								
 							</div>
 					
 							<input type="text" name="company" placeholder="company" id="company"><br>
-							<textarea type="text" name="message" placeholder="message" id="message"></textarea><br>
-							
+							<div class="form-group-two">
+							<textarea type="text" name="message" placeholder="message" id="message"></textarea>
+							<small class="form-control-msg text-danger">Your Email is Required</small><br>
+							</div>
 						
 						
 							<button type="submit" value="SEND MESSAGE">SEND MESSAGE</button>
 						
 						<div class="form-control-msg js-form-submission">Submission in process, please wait..</div>
-						<div class="form-control-msg js-form-success">Message Successfully submitted, thank you!</div>
+						<div class="form-control-msg js-form-success">Message Successfully Submitted, Thank You!</div>
 						<div class="form-control-msg js-form-error">There was a problem with the Contact Form, please try again!</div>
-					</div>
+						
+				
 					</form>
 					</div>
 					

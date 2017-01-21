@@ -31,18 +31,18 @@ jQuery(document).ready( function($){
 				ajaxurl = form.data('url');
 		
 		if( name === '' ){
-			$('#name').parent('.form-group').addClass('has-error');
+			$('#name').parent('.form-group-two').addClass('has-error');
 			return;
 		}
 		
 		
 		if( email === '' ){
-			$('#email').parent('.contact-form').addClass('has-error');
+			$('#email').parent('.form-group-two').addClass('has-error');
 			return;
 		}
 
 		if( message === '' ){
-			$('#message').parent('.contact-form').addClass('has-error');
+			$('#message').parent('.form-group-two').addClass('has-error');
 			return;
 		}
 		
@@ -66,13 +66,27 @@ jQuery(document).ready( function($){
 				
 			},
 			error : function( response ){
-				console.log(response);
+				$('.js-form-submission').addClass('js-show-feedback');
+				$('.js-form-error').addClass('js-show-feedback');
+				form.find('input, button, textarea').removeAttr('disabled');
 			},
 			success : function( response ){
 				if(response === 0) {
-					console.log('Unable to save your message, please try again!');
+					
+				setTimeout(function(){
+					
+				
+				$('.js-form-submission').addClass('js-show-feedback');
+				$('.js-form-error').addClass('js-show-feedback');
+				form.find('input, button, textarea').removeAttr('disabled');
+					},500);
 				}else{ 
-					console.log('Message Saved, thank you!');
+					setTimeout(function(){
+				$('.js-form-submission').addClass('js-show-feedback');
+				$('.js-form-success').addClass('js-show-feedback');
+				form.find('input, button, textarea').removeAttr('disabled').val('');
+					
+					},500);
 				}
 			}
 			
@@ -81,13 +95,10 @@ jQuery(document).ready( function($){
 	});
 	
 	
-	
+	// animation loading
 	$(window).load(function() {
 	$("#loading").delay(1000).fadeOut(500);
-	//$("#loading-center").click(function() {
-	//$("#loading").fadeOut(500);
-	//});
-});
+	});
 	
 	
 	
