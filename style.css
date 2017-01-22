@@ -152,7 +152,10 @@ a:hover {
 
 	
 }
-
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+}
 /************ Headings *******************/
 .main-hero{
 	padding-top: 110px;
@@ -484,7 +487,7 @@ width: 50%;
 /**************animation preloader*************************/
 
 #loading{
-background-color: #bd4932;
+background-color: #fff;
 height: 100%;
 width: 100%;
 position: fixed;
@@ -510,7 +513,7 @@ top: 0px;
 #object{
 	width: 80px;
 	height: 80px;
-	background-color: #FFF;
+	background-color: #222;
 	-webkit-animation: animate 1s infinite ease-in-out;
 	animation: animate 1s infinite ease-in-out;
 	margin-right: auto;
