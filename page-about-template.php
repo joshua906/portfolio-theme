@@ -16,7 +16,7 @@ get_header(); ?>
 				<div class="col-md-8">
 					<div class="content-heading">
 						<h1 class="small-font-family module">Hello! I'm Joshua Matthews, UI/UX Designer and Front end Developer</h1>
-						<h4></h4>
+						
 					</div>
 				</div>
 			</div>

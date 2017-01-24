@@ -6,10 +6,10 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="">
-						<!--<h4 class="font-family fadeInUp">Welcome! I'm Joshua Matthews, UI/UX Designer and Front End Developer</h4>
+						<!--<h4 class="font-family fadeInUp">Hello! I'm Joshua Matthews, UI/UX Designer and Front end Developer</h4>
 						<h4 class="font-family fadeInUp">Welcome</h4>-->
 						<!--<h1 class="small-font-family big"> I build and design web and mobile experiences that help brands<span>Stand Out.</span></h1>-->
-						<h1 class="small-font-family big"> UI/UX Designer<br>Front End Development</br></h1>
+						<h1 class="small-font-family big"> Hello! I'm <b>Joshua Matthews</b>, UI/UX Designer and Front End Developer</h1>
 						
 						
 					</div>
@@ -27,7 +27,7 @@
 			
 			<?php 
 
-				$args = array('post_type' => 'portfolio', 'post_per_page' => 3 );
+				$args = array('post_type' => 'portfolio', 'post_per_page' => 6 );
 				$loop = new WP_Query( $args );
 
 				if( $loop->have_posts() ):

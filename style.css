@@ -14,8 +14,9 @@ h1,h2,h3,h4,h5,h6 {
 	font-weight: 700;
 }
 p {
-	font-family: 'Arimo', sans-serif;
-	font-size: 1.2em;
+    font-family: 'Arimo', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
 }
 .font-family{
 	font-family: 'Arimo', sans-serif;
@@ -273,7 +274,7 @@ figure.effect-bubba {
 }
 
 figure.effect-bubba img {
-	opacity: 0.7;
+	opacity: 0.9;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
