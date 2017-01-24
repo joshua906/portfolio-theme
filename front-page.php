@@ -6,14 +6,49 @@
 			<div class="row">
 				<div class="col-md-8">
 					<div class="">
-						<h4 class="font-family fadeInUp">Welcome! I'm Joshua Matthews, UI Designer and Front End Developer</h4>
-						<h1 class="font-family"> I craft digital innovations that help brands <span>Stand Out.</span></h1>
-						<p></p>
+						<!--<h4 class="font-family fadeInUp">Welcome! I'm Joshua Matthews, UI/UX Designer and Front End Developer</h4>
+						<h4 class="font-family fadeInUp">Welcome</h4>-->
+						<!--<h1 class="small-font-family big"> I build and design web and mobile experiences that help brands<span>Stand Out.</span></h1>-->
+						<h1 class="small-font-family big"> UI/UX Designer<br>Front End Development</br></h1>
+						
+						
 					</div>
 				</div>
 			</div>
 			</div>
 		</div>
+<!-- portfolio heading-->
+		<div class="portfolio-work">
+				
+		<div class="container">
+		
+			  <!-- width of .grid-sizer used for columnWidth -->
+			<div class="row" id="ms-container">	
+			
+			<?php 
 
+				$args = array('post_type' => 'portfolio', 'post_per_page' => 3 );
+				$loop = new WP_Query( $args );
+
+				if( $loop->have_posts() ):
+
+					while( $loop->have_posts() ): $loop->the_post(); ?> 
+					<div class="ms-item col-xs-12 col-md-6">
+					<div class="item-wrapper">
+
+						<?php get_template_part('content-portfolio', ''); ?>
+					
+					</div>
+					</div>
+					<?php endwhile;
+
+				endif;
+
+				?>
+			
+		</div>
+
+		</div>
+		</div>
 
 <?php get_footer(); ?>

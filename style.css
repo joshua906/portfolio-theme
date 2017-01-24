@@ -24,8 +24,11 @@ p {
 .small-font-family {
 	font-family: 'Arimo', sans-serif;
 	font-weight: 400;
-	color: rgba(151,151,151,.7);
+	color: #222;
 	
+}
+.big{
+	font-size: 44px;
 }
 a {
 	color: #222;
@@ -75,7 +78,7 @@ a {
     text-decoration: uppercase;
     padding: 10px 22px;
     color: #222;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 700 !important;
 	font-family: 'Arimo', sans-serif;
 }
@@ -342,6 +345,9 @@ figure.effect-bubba:hover p {
 	margin-top: 20px;
 }
 /************ Contact Page ***************/
+form {
+	padding-top: 15px;
+}
  .form-control-msg {
 	display:none;
 }
@@ -367,7 +373,7 @@ figure.effect-bubba:hover p {
 	width: 100%;
 }
 .contact-form {
-	margin-top: 40px;
+	margin-top: 60px;
 }
 input[type=text] {
     padding: 15px;
@@ -465,6 +471,7 @@ textarea {
 /* Makes two columns */
 .ms-item {
 width: 50%;
+padding-top: 10px;
 }
 @media only screen and (max-width: 660px) {
 .ms-item {
@@ -473,10 +480,9 @@ width: 50%;
 }
 /************ Footer *******************/
 .footer{
-	margin-top: 50px;
-    color: #fff;
-    background-color: #222;
-    padding: 32px 0px;
+    margin-top: 50px;
+    color: #222;
+    padding: 75px 0px;
 }
 
 .footer p {
@@ -539,3 +545,4 @@ top: 0px;
   }
 }
 
+/************** Aniomations ********************/
