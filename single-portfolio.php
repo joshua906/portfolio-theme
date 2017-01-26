@@ -10,7 +10,7 @@
 				<div class="col-md-offset-2 col-md-8">
 					<div class="">
 					
-						<h1 class="small-font-family big text-center"><?php the_title(); ?></h3>
+						<h1 class="small-font-family big"><?php the_title(); ?></h3>
 						<p><?php the_content(); ?></p>
 						
 					</div>
@@ -59,5 +59,13 @@
 		</div>
 	</div>
 
-
+<!--  Hpog image -->
+	  <div class="responsive-images">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-12 text-center">
+		  		<img src="<?php echo get_template_directory_uri(); ?>/img/hpog.png" width="1000" height="568" alt=""/> </div>
+			  </div>
+		  </div>
+	  </div>
 <?php get_footer(); ?>

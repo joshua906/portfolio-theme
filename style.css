@@ -168,6 +168,13 @@ a:hover {
 
 
 /************ The Work Sections *******************/
+.responsive-images {
+	/*background-image: url(img/hpog.png);*/
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+    height: auto;
+}
 .portfolio-work {
 	margin-top: 20px;
 }
