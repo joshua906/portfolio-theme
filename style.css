@@ -15,8 +15,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 p {
     font-family: 'Merriweather', serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 17px;
+    line-height: 26px;
 }
 .font-family{
 	font-family: 'Arimo', sans-serif;
@@ -175,6 +175,12 @@ a:hover {
 
 
 /************ The Work Sections *******************/
+.spacing{
+	margin-top: 40px;
+}
+.project-info {
+	margin-top: 25px;
+}
 .responsive-images {
 	/*background-image: url(img/hpog.png);*/
 	background-repeat: no-repeat;
