@@ -1,6 +1,6 @@
 	
 </main>
-	
+ <div class="spacing"></div>
 <div class="footer">
 			<div class="container">
 				<div class="col-md-6">
@@ -15,7 +15,7 @@
 					<p>phone: 214-422-8721</p>-->
 				</div>
 			
-				<div class="col-md-6 text-right">
+				<div class="col-md-6 text-right left-media">
 				<p>copyright matthews designs 2017</p>
 				<i class="fa fa-github fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>

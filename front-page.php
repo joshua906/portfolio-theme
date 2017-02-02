@@ -4,12 +4,12 @@
 		<div class="main-hero">
 			<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-9">
 					<div class="">
 						<!--<h4 class="font-family fadeInUp">Hello! I'm Joshua Matthews, UI/UX Designer and Front end Developer</h4>
 						<h4 class="font-family fadeInUp">Welcome</h4>-->
 						<!--<h1 class="small-font-family big"> I build and design web and mobile experiences that help brands<span>Stand Out.</span></h1>-->
-						<h1 class="small-font-family big"> Hello! I'm <b>Joshua Matthews</b>, UI/UX Designer and Front End Developer</h1>
+						<h1 class="small-font-family big"> I'm <b>Joshua Matthews</b>, I build and design web and mobile experiences that help brands <span>Stand Out.</span></h1>
 						
 						
 					</div>

@@ -50,14 +50,13 @@
 
 	<div class="spacing"></div>
 <!--  Hpog image -->
-	  <div class="responsive-images">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-12 text-center">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/hpog.png" width="1000" height="568" alt=""/> </div>
+
+			  <div class="">
+				  <div class="">
+		  		<img class="hero-single" src="<?php echo get_template_directory_uri(); ?>/img/post-hero.jpg" alt=""/>
+		  		 </div>
 			  </div>
-		  </div>
-	  </div>
+
 	  
 	  <div class="spacing"></div>
 	  <div class="container-post">
@@ -99,7 +98,7 @@
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-12 text-center">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/web-full.png" width="1170" height="2600" alt=""/> </div>
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/web-full.png" width="1170" height="2600" alt=""/> </div>
 			  </div>
 		  </div>
 	  </div>
