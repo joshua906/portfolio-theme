@@ -32,11 +32,16 @@ span {
 	
 }
 .container-post {
-	width:700px;
+	
 	padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+@media (min-width: 768px){
+.container-post {
+   width:700px;
+}
 }
 .big{
 	font-size: 44px;
