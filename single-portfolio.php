@@ -219,6 +219,23 @@ the focal point of the site while the text and imagery faded into the background
 hero image as the first visual someone sees as they enter the site, a video header background was
 						added. This implementation encouraged the user to discover more within the site. </p>
 						
+			   </div>
+			</div>
+		</div>
+  		
+		   <div class="spacing"></div>
+		<div class="responsive-images">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-12 text-center">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/brainzapped-phone-and-tablet.png" width="1170" height="1800" alt=""/> </div>
+			  </div>
+		  </div>
+	  </div>
+						
+		 <div class="spacing"></div>			
+	  <div class="container-post">
+			<div class="row">
 					<h3>Prototyping and Outcome</h3>
 					<p>I felt it was necessary to create a small prototype of the home page. This way we could get an accurate
 representation of how a user might interact with the website and what features may need to be added
