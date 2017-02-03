@@ -17,7 +17,7 @@
 			
 				<div class="col-md-6 text-right left-media">
 				<p>copyright matthews designs 2017</p>
-				<i class="fa fa-github fa-lg" aria-hidden="true"></i>
+					<a href=""><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
 				<i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
 				<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
 				</div>
