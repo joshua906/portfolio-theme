@@ -326,7 +326,7 @@ a:hover {
 
 .grid-image figure p {
 	letter-spacing: 1px;
-	font-size: 68.5%;
+	font-size: 100%;
 }
 /***** Bubba *****/
 
@@ -386,6 +386,7 @@ figure.effect-bubba p {
 	transition: opacity 0.35s, transform 0.35s;
 	-webkit-transform: translate3d(0,20px,0);
 	transform: translate3d(0,20px,0);
+	font-family: 'Arimo', sans-serif;
 }
 
 figure.effect-bubba:hover figcaption::before,

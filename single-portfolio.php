@@ -175,7 +175,7 @@ experience for its audience that showcased a modern aesthetic and improved funct
 <!--  Brainzapped image -->
 			  <div class="">
 				  <div class="">
-		  		<img class="hero-single" src="<?php echo get_template_directory_uri(); ?>/img/post-hero-b.jpg" alt=""/>
+		  		<img class="hero-single" src="<?php echo get_template_directory_uri(); ?>/img/hero-brainzapped.png" alt=""/>
 		  		 </div>
 			  </div>
 
