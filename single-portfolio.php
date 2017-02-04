@@ -11,14 +11,16 @@
 					<div class="">
 					
 						<h1 class="font-family"><?php the_title(); ?></h1>
+						<p><?php the_excerpt(); ?></p>
 						
-						<p><?php the_content(); ?></p>
 						
 					</div>
 				</div>
 			</div>
 			</div>
 		</div>
+  	<?php the_content(); ?>
+<!--
 	  	<div class="project-info">
 		<div class="container-post">
 			<div class="row">
@@ -50,13 +52,17 @@
 		  		<img class="hero-single" src="<?php echo get_template_directory_uri(); ?>/img/post-hero.jpg" alt=""/>
 		  		 </div>
 			  </div>
-
+			<div class="">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/hpog-tablet.png" alt=""/>
+		  		 </div>
+			  </div>
 	  
 	  <div class="spacing"></div>
 	  <div class="container-post">
 			<div class="row">
 				<div class="col-md-12">
-					<h3>Exploring the New Marketing Strategy for the Microsite</h3>
+					<h3>Exploring the New Marketing Strategy</h3>
 					<p>Marketing within the non-profit sector poses its own challenges. Often times, companies are more
 						focused on their message that visually the design of their marketing attempts feel neglected. With this
 						in mind, we set out to create a website that was primarily focused on content, but engaged our
@@ -68,15 +74,7 @@
 				</div>
 			</div>
 		</div>
-  	  <div class="spacing"></div>
-	  	  <div class="responsive-images">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-12 text-center">
-		  		<img src="<?php echo get_template_directory_uri(); ?>/img/hpog-wireframe.jpg" width="1170" height="500" alt=""/> </div>
-			  </div>
-		  </div>
-	  </div>
+
 	  
 
 	 <div class="spacing"></div>
@@ -88,6 +86,25 @@
 					identified early on in the process that we wanted to try a different approach to reach our audience, I
 					knew I had a chance to try something different. </p>
 					
+				</div>
+			</div>
+		</div>
+		
+		
+		 <div class="spacing"></div>
+	  	  <div class="">
+		  <div class="">
+			  <div class="">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/hpog-wireframes.png" width="1920" height="1200" alt=""/> </div>
+			  </div>
+		  </div>
+	  </div>
+		
+		
+	<div class="container-post">
+			<div class="row">
+				<div class="col-md-12">
 					<p>During the wire framing and exploration stage the layout of our website was established. Throughout
 						this process my drafts and sketches lead me to a simplified layout that enhances the user’s experience
 						but allows our content to shine. With a minimalist approach, this forced us to focus on elements that
@@ -118,6 +135,7 @@
 				</div>
 			</div>
 		</div>
+-->
 		  <?php endwhile; 
 
             ?>

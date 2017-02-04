@@ -6,12 +6,19 @@ jQuery(document).ready( function($){
 	
 	///masonry layout
 	
-	var container = document.querySelector('#ms-container');
+	/*var container = document.querySelector('#ms-container');
       var msnry = new Masonry( container, {
         itemSelector: '.ms-item',
         columnWidth: '.ms-item',                
       });  
-      
+      */
+	
+	var $container = $('#ms-container');
+	// initialize
+	$container.masonry({
+  	columnWidth: '.ms-item',
+  	itemSelector: '.ms-item'
+	});
 	
 	/*Contact Form submission*/
 	$('#portfolioContactForm').on('submit', function(e){

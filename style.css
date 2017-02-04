@@ -340,13 +340,14 @@ figure.effect-bubba {
 }
 
 figure.effect-bubba img {
-	opacity: 0.9;
+	opacity: 1;
 	-webkit-transition: opacity 0.35s;
 	transition: opacity 0.35s;
 }
 
 figure.effect-bubba:hover img {
-	opacity: 0.4;
+	background-color: #fff;
+	opacity: .0;
 }
 
 figure.effect-bubba figcaption::before,
