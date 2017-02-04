@@ -4,7 +4,7 @@
 
   <?php if ( have_posts() ): ?>
   	<?php while ( have_posts() ) : the_post(); ?>
-  	<!--<div class="main-hero">
+  	<div class="main-hero">
 			<div class="container-post">
 			<div class="row">
 				<div class="col-md-12">
@@ -87,18 +87,16 @@
 					<p>The next challenge was to find the best way that promoted our content within the website. Since we
 					identified early on in the process that we wanted to try a different approach to reach our audience, I
 					knew I had a chance to try something different. </p>
-					<h3>Wireframe</h3>
+					
 					<p>During the wire framing and exploration stage the layout of our website was established. Throughout
 						this process my drafts and sketches lead me to a simplified layout that enhances the user’s experience
 						but allows our content to shine. With a minimalist approach, this forced us to focus on elements that
-						promoted our campaign, and strip away the unnecessary items that might cause distractions. </p>
+						best supported our campaign, and strip away the unnecessary items that might cause distractions. </p>
 					
-					<h3>Development</h3>
+					
 					<p>Once the initial wireframes were completed, the development of the site began. In this stage I created
-					the visuals to be implemented within our microsite. The visuals consisted of bold typography, imagery
-					from the medical and technology field, and spacing the alignments so that a user could focus on one
-					piece of information at a time. The details added make it easier for the audience to digest our
-						information and increase user engagement. </p>
+					the visuals to be implemented within our microsite. The visuals consisted of bold typography and imagery
+					from the medical and technology field. </p>
 				</div>
 			</div>
 		</div>
@@ -119,7 +117,7 @@
 					<p>The new direction taken in our microsite has provided viewers with a clean and engaging  interface used to inform the user on our products and services. The microsite now accomplishes our inital goals by offering great content with a functional and engaging experience.</p>
 				</div>
 			</div>
-		</div>-->
+		</div>
 		  <?php endwhile; 
 
             ?>
@@ -129,7 +127,7 @@
 			
 			
 			
-			
+	<!--		
 	   <div class="main-hero">
 			<div class="container-post">
 			<div class="row">
@@ -172,7 +170,7 @@ experience for its audience that showcased a modern aesthetic and improved funct
 	</div>
 
 	<div class="spacing"></div>
-<!--  Brainzapped image -->
+
 			  <div class="">
 				  <div class="">
 		  		<img class="hero-single" src="<?php echo get_template_directory_uri(); ?>/img/hero-brainzapped.png" alt=""/>
@@ -193,7 +191,7 @@ experience for its audience that showcased a modern aesthetic and improved funct
 					<ol>
 						<li>Providing an improved use of functionality</li>
 						<li>Enhance the visual appeal of the site</li>
-						<li>Build the site in a way where it is easy to maintain and update(Using WordPress as CMS)</li>
+						<li>Build the site so it is easy to maintain and update (Using WordPress as CMS)</li>
 					</ol>
 				</div>
 			</div>
@@ -333,10 +331,10 @@ should be used as an interactive element for people visiting the site.
 							<p class="testimony">"Matthews Designs provided exactly what we were looking for, a stylish, engaging, easy to navigate
 website. Joshua's easy-going attitude made the process a breeze. I was impressed by his attention to
 detail, close collaboration and insight throughout the project build."</p>
-							<p>- GEORGE GARCIA</p>
+							<h5>GEORGE GARCIA, Egg Entertainment</h5>
 					<hr>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div>-->
 <?php get_footer(); ?>
