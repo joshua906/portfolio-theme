@@ -233,7 +233,7 @@ hero image as the first visual someone sees as they enter the site, a video head
 		  </div>
 	  </div>
 						
-		 <div class="spacing"></div>			
+	<div class="spacing"></div>			
 	  <div class="container-post">
 			<div class="row">
 					<h3>Prototyping and Outcome</h3>
@@ -244,14 +244,22 @@ representation of how a user might interact with the website and what features m
 			</div>
 		</div>
   
-  
+   <div class="spacing"></div>
+  		<div class="">
+		  <div class="">
+			  <div class="row">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/sub-pages.png" width="1920" height="1200" alt=""/> </div>
+			  </div>
+		  </div>
+	  </div>
   
    <div class="spacing"></div>
 		<div class="responsive-images">
 		  <div class="container">
 			  <div class="row">
 				  <div class="col-md-12 text-center">
-		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/webfull-b.png" width="1170" height="1800" alt=""/> </div>
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/webfull-brainzapped.png" width="1170" height="1800" alt=""/> </div>
 			  </div>
 		  </div>
 	  </div>
@@ -302,9 +310,10 @@ should be used as an interactive element for people visiting the site.
 					<div class="row">
 						<div class="col-md-12 text-center">
 						<hr>
-							<p class="">Matthews Designs provided exactly what we were looking for, a stylish, engaging, easy to navigate
+							<h3>Client Testimonies</h3>
+							<p class="testimony">"Matthews Designs provided exactly what we were looking for, a stylish, engaging, easy to navigate
 website. Joshua's easy-going attitude made the process a breeze. I was impressed by his attention to
-detail, close collaboration and insight throughout the project build.</p>
+detail, close collaboration and insight throughout the project build."</p>
 							<p>- GEORGE GARCIA</p>
 					<hr>
 						</div>
