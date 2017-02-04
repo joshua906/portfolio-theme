@@ -191,8 +191,8 @@ experience for its audience that showcased a modern aesthetic and improved funct
 					site for the various screen sizes used today to improve the sites functionality. </p>
 					<p><b>Our Main goals for the site were quite simple:</b></p>
 					<ol>
-						<li>Providing users Easier functionality</li>
-						<li>Enhance the visual design of the site</li>
+						<li>Providing an improved use of functionality</li>
+						<li>Enhance the visual appeal of the site</li>
 						<li>Build the site in a way where it is easy to maintain and update(Using WordPress as CMS)</li>
 					</ol>
 				</div>
@@ -202,7 +202,7 @@ experience for its audience that showcased a modern aesthetic and improved funct
   
   
   
-  <div class="spacing"></div>
+ 
 	  <div class="container-post">
 			<div class="row">
 				<div class="col-md-12">
@@ -212,9 +212,26 @@ experience for its audience that showcased a modern aesthetic and improved funct
 					were visual learners and needed more than great content to keep their attention. So it was key to create
 					a visually engaging experience that kept the focus on the videos as one journeyed throughout the site.
 					</p>
-					
+				 </div>
+			</div>
+		</div>
+		
+		  		
+	<div class="">
+		  <div class="">
+			  <div class="row">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/wireframes-brainzapped.png" width="1920" height="1700" alt=""/> </div>
+			  </div>
+		  </div>
+	  </div>
+	  
+<div class="spacing"></div>
+	  <div class="container-post">
+			<div class="row">
+				<div class="col-md-12">
 					<h3>Sketches and Wireframes</h3>
-					<p>To accomplish this, my sketches and wireframes consisted of different methods that made the videos
+					<p>To accomplish this, my sketches and wireframes consisted of different layouts that made the videos
 the focal point of the site while the text and imagery faded into the background. Instead of using a static
 hero image as the first visual someone sees as they enter the site, a video header background was
 						added. This implementation encouraged the user to discover more within the site. </p>
@@ -224,10 +241,10 @@ hero image as the first visual someone sees as they enter the site, a video head
 		</div>
   		
 		   <div class="spacing"></div>
-		<div class="responsive-images">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-12 text-center">
+		<div class="">
+		  <div class="">
+			  <div class="">
+				  <div class="">
 		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/brainzapped-phone-and-tablet.png" width="1170" height="1800" alt=""/> </div>
 			  </div>
 		  </div>
@@ -236,10 +253,12 @@ hero image as the first visual someone sees as they enter the site, a video head
 	<div class="spacing"></div>			
 	  <div class="container-post">
 			<div class="row">
+				<div class="col-md-12">
 					<h3>Prototyping and Outcome</h3>
 					<p>I felt it was necessary to create a small prototype of the home page. This way we could get an accurate
 representation of how a user might interact with the website and what features may need to be added
 						or omitted. After interacting with the prototype we felt that some areas could be improved. </p>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -272,7 +291,7 @@ representation of how a user might interact with the website and what features m
 				<div class="col-md-12">
 					
 					<p>For example, we reduced the amount of videos that were featured on the homepage which increased
-load time, and improved the users overall experience. We also moved the video header from the current
+load time, and improved the users experience. We also moved the video header from the current
 front page and made it its own separate page. We felt that the video demands its own attention and
 should be used as an interactive element for people visiting the site.
 					</p>
@@ -310,7 +329,7 @@ should be used as an interactive element for people visiting the site.
 					<div class="row">
 						<div class="col-md-12 text-center">
 						<hr>
-							<h3>Client Testimonies</h3>
+							<h3>Client Testimony</h3>
 							<p class="testimony">"Matthews Designs provided exactly what we were looking for, a stylish, engaging, easy to navigate
 website. Joshua's easy-going attitude made the process a breeze. I was impressed by his attention to
 detail, close collaboration and insight throughout the project build."</p>
