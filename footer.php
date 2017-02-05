@@ -20,7 +20,7 @@
 					<p>&copy;2017 matthews designs</p>
 				<a href="https://github.com/joshua906"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
 				<a href="https://www.linkedin.com/in/joshua-matthews-1b899893?trk=hp-identity-name"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-					<a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+					<a href="https://www.facebook.com/josh.matthews.3532"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
