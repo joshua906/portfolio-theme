@@ -17,10 +17,10 @@
 				</div>
 			
 				<div class="col-md-6 text-right left-media">
-				<p>copyright matthews designs 2017</p>
-				<a href="https://github.com/joshua906"><i class="fa fa-github fa-lg" aria-hidden="true"></i></a>
-				<a href="https://www.linkedin.com/in/joshua-matthews-1b899893?trk=hp-identity-name"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i></a>
-				<i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+					<p>&copy;2017 matthews designs</p>
+				<a href="https://github.com/joshua906"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+				<a href="https://www.linkedin.com/in/joshua-matthews-1b899893?trk=hp-identity-name"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
