@@ -11,7 +11,7 @@ jQuery(document).ready( function($){
         itemSelector: '.ms-item',
         columnWidth: '.ms-item',                
       });  
-      */
+      
 	
 	var $container = $('#ms-container');
 	// initialize
@@ -19,7 +19,16 @@ jQuery(document).ready( function($){
   	columnWidth: '.ms-item',
   	itemSelector: '.ms-item'
 	});
-	
+	*/
+	var $grid = $('#ms-container').masonry({
+  itemSelector: '.ms-item',
+  percentPosition: true,
+  columnWidth: '.ms-item'
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+}); 
 	/*Contact Form submission*/
 	$('#portfolioContactForm').on('submit', function(e){
 		

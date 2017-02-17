@@ -21,6 +21,8 @@ add_action( 'wp_enqueue_scripts', 'portfolio_theme_styles');
 function portfolio_theme_js() {
 	 
 	wp_enqueue_script( 'portfolio', get_template_directory_uri() . '/js/portfolio.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'imagesloaded', get_template_directory_uri() . '/js/imagesloaded.js', array('jquery'), '1.0.0', true );
+	
   	  wp_enqueue_script( 'jquery' );
 	  wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array('jquery'), '3.3.7', true );
 	wp_enqueue_script( 'masonry' );
