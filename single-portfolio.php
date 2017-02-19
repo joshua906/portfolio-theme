@@ -73,12 +73,38 @@
 				<div class="col-md-12">
 					<h3>Creating the App's User Interface</h3>
 					<p>Before beginning the apps interface, a flow chart was created. The flow chart was utilized to help establish the necessary steps one would need to take to complete each task. Our solution gives the users an easy and efficient way to progress towards college readiness. This process highlighted our need for a clean interface that created an intuitive flow between the different views for the user.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="spacing"></div>
+	  	 
+			  <div class="">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/app-wireframe.png" width="1920" height="1500" alt=""/> </div>
+			  </div>
+	<div class="spacing"></div>
+			<div class="spacing"></div>	
+	<div class="container-post">
+			<div class="row">
+				<div class="col-md-12">
 					<p>Rough sketches and Wireframes were then created to help us further visualize the layout of the app. The app went through many different iterations but through the process we could distinguish a design direction that matched the goals we were trying to accomplish.</p>
 					<p>This lead to the process of assembling our prototype. To do this, we started with low fidelity mockups that allowed us to begin seeing how our application would take form. Once we were confident in the ease of use our layout provided the additions of icons, color, and imagery were added to aid the user in completing their task within the app.</p>
 				</div>
 			</div>
 		</div>
 		
+			 
+			 
+	<div class="spacing"></div>
+	  	 
+			  <div class="">
+				  <div class="">
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/app-final.png" width="1920" height="2300" alt=""/> </div>
+			  </div>
+
+			
 				 <div class="spacing"></div>
 	  <div class="container-post">
 			<div class="row">
