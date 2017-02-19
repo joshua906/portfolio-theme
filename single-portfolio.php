@@ -48,12 +48,13 @@
 		  <div class="">
 			  <div class="">
 				  <div class="">
-		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/app-hero.png" width="1920" height="1000" alt=""/> </div>
+		  		<img class="responsive-images" src="<?php echo get_template_directory_uri(); ?>/img/app-hero.png" width="1920" height="1200" alt=""/> </div>
 			  </div>
 		  </div>
 	  </div>
 	  
-	 <div class="spacing"></div>
+	
+	 <div class="app-color">
 	  <div class="container-post">
 			<div class="row">
 				<div class="col-md-12">
@@ -63,7 +64,8 @@
 				</div>
 			</div>
 		</div>
-		
+		<div class="spacing"></div>
+	 </div>
 		
 		 <div class="spacing"></div>
 	  <div class="container-post">

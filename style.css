@@ -213,6 +213,12 @@ a:hover {
 }
 }
 /************ The Work Sections *******************/
+
+.app-color {
+	background-color: #0a6059;
+	color: #fff;
+	padding: 10px 0px 20px 0px;
+}
 .spacing{
 	margin-top: 40px;
 }
