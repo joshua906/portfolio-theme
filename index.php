@@ -15,27 +15,28 @@
 			</div>
 		</div>
 
+	
+			<div class="blog-layout">
+				<div class="container">
 	<?php 
 	
 	if( have_posts() ):
 		
 		while( have_posts() ): the_post(); ?>
-			
-			
-			<div class="blog-layout">
-				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 						<?php get_template_part('content',get_post_format()); ?>
 						</div>
 					</div>
-				</div>
-			</div>
-		<?php endwhile;
+
+			<?php endwhile;
 		
 	endif;
 			
 	?>
+				</div>
+			</div>
+
 
 
 <?php get_footer(); ?>

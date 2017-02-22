@@ -28,7 +28,8 @@ p {
     font-size: 15px;
 }
 }
-span {
+h1.small-font-family.module span {
+	font-family: 'Merriweather', serif;
 	
 }
 .font-family{

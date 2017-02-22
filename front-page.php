@@ -9,7 +9,7 @@
 						<!--<h4 class="font-family fadeInUp">Hello! I'm Joshua Matthews, UI/UX Designer and Front end Developer</h4>
 						<h4 class="font-family fadeInUp">Welcome</h4>-->
 						<!--<h1 class="small-font-family big"> I build and design web and mobile experiences that help brands<span>Stand Out.</span></h1>-->
-						<h1 class="small-font-family module"> I'm <b>Joshua Matthews</b>, I build unique digital experiences that help brands <span>Stand Out.</span></h1>
+						<h1 class="small-font-family module"> I'm <b>Joshua Matthews</b>, & I provide <b>design solutions</b> that help <b>businesses</b> and <b>startups</b> Succeed.</h1>
 						
 						
 					</div>
