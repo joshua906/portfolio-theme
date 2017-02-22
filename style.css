@@ -73,6 +73,35 @@ a {
 	line-height: 30px;
 	
 }
+button {
+    background-color: #000;
+    border: 1px solid #000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-top: 30px;
+    font-family: 'Merriweather', serif;
+
+}
+button:hover {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 25px;
+    margin-top: 30px;
+    font-family: 'Merriweather', serif;
+    transition-duration: .4s;
+
+}
 /************* New Navigation ***************/
 .top-pad {
 	padding-top: 30px;
@@ -214,7 +243,9 @@ a:hover {
 }
 }
 /************ The Work Sections *******************/
-
+.portfolio-intro{
+	margin-top: 30px;
+}
 .app-color {
 	background-color: #0a6059;
 	color: #fff;

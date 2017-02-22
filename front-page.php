@@ -17,7 +17,25 @@
 			</div>
 			</div>
 		</div>
+		<div class="caption">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<p>An attractive website can only grab the attention of your audience  for so long. If your website isn't serving a specific purpose for your viewers they will have no reason to stay. On the bright side,  I provide solutions that will ensure the success and growth of your business. <em>Are your ready to invest in your brand?</em></p>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<a href="<?php echo get_page_link(26); ?>"><button>Start Your Project Today</button></a>
+				</div>
+			</div>
+		</div>
 <!-- portfolio heading-->
+
 		<div class="portfolio-work">
 				
 		<div class="container">
