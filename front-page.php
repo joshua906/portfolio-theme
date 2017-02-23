@@ -26,13 +26,14 @@
 					<div class="col-md-3"></div>
 				</div>
 			</div>
-		</div>
+		
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<a href="<?php echo get_page_link(26); ?>"><button>Start Your Project Today</button></a>
 				</div>
 			</div>
+		</div>
 		</div>
 <!-- portfolio heading-->
 

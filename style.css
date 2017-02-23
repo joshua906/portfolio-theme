@@ -73,7 +73,7 @@ a {
 	line-height: 30px;
 	
 }
-button {
+.caption button {
     background-color: #000;
     border: 1px solid #000;
     color: white;
@@ -87,7 +87,7 @@ button {
     font-family: 'Merriweather', serif;
 
 }
-button:hover {
+.caption button:hover {
     background-color: #fff;
     border: 1px solid #000;
     color: #000;
