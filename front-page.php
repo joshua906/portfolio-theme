@@ -21,7 +21,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-9">
-						<p>An attractive website can only grab the attention of your audience  for so long. If your website isn't serving a specific purpose for your viewers they will have no reason to stay. On the bright side,  I provide solutions that will ensure the success and growth of your business. <em>Are your ready to invest in your brand?</em></p>
+						<p>An attractive website can only grab the attention of your audience  for so long. If your website isn't serving a specific purpose for your viewers they will have no reason to stay. On the bright side,  I provide solutions that will ensure the success and growth of your business. <b><em>Are your ready to invest in your brand?</em></b></p>
 					</div>
 					<div class="col-md-3"></div>
 				</div>
@@ -33,40 +33,6 @@
 					<a href="<?php echo get_page_link(26); ?>"><button>Start Your Project Today</button></a>
 				</div>
 			</div>
-		</div>
-		</div>
-<!-- portfolio heading-->
-
-		<div class="portfolio-work">
-				
-		<div class="container">
-		
-			  <!-- width of .grid-sizer used for columnWidth -->
-			<div class="row" id="ms-container">	
-			
-			<?php 
-
-				$args = array('post_type' => 'portfolio', 'post_per_page' => 6 );
-				$loop = new WP_Query( $args );
-
-				if( $loop->have_posts() ):
-
-					while( $loop->have_posts() ): $loop->the_post(); ?> 
-					<div class="ms-item col-xs-12 col-md-6">
-					<div class="item-wrapper">
-
-						<?php get_template_part('content-portfolio', ''); ?>
-					
-					</div>
-					</div>
-					<?php endwhile;
-
-				endif;
-
-				?>
-			
-		</div>
-
 		</div>
 		</div>
 

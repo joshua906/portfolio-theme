@@ -75,7 +75,7 @@
 					
 					<div class="col-md-5 col-md-offset-1">
 					<br>
-
+					
 						<h3>Email</h3>
 						<p>joshuamatthews906@yahoo.com</p>
 						<h3>Phone</h3>
