@@ -18,22 +18,31 @@
 	
 			<div class="blog-layout">
 				<div class="container">
+	
+					<div class="row">
+						<div class="col-md-8">
 	<?php 
 	
 	if( have_posts() ):
 		
 		while( have_posts() ): the_post(); ?>
-					<div class="row">
-						<div class="col-md-6">
 						<?php get_template_part('content',get_post_format()); ?>
-						</div>
-					</div>
-
+						
+						
+						
+	
 			<?php endwhile;
 		
 	endif;
 			
 	?>
+						</div>
+					</div>
+					
+
+		<div class="row">
+			<?php get_sidebar(); ?>
+		</div>
 				</div>
 			</div>
 
