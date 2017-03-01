@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="row">
 				<div class="col-md-8">
 					<div class="content-heading">
-						<h1 class="small-font-family">Case Studies showing I <b>solved problems</b> for clients</h1>
+						<h1 class="small-font-family">Detaile descritions of how I <b>solved problems</b> for clients</h1>
 						<h4></h4>
 					</div>
 				</div>
