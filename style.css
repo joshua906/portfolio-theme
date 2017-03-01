@@ -715,19 +715,19 @@ top: 0px;
   display: block;
   color: #595959;
   font-size: 13px;
-  font-weight: ;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: 3px;
-  text-align: center;
+  text-align: left;
 }
 
 
 .kt-smart-divider {
-  border-top:2px solid #d2a74d;
-  display: block;
-  max-width: 40px;
-  margin: 10px auto 25px;
+    border-top: 2px solid #d2a74d;
+    display: block;
+    max-width: 86px;
+    margin: 21px 0px;
+    text-align: left;
 }
 
 /* 
