@@ -6,6 +6,8 @@ require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/custom-post-type.php';
 require get_template_directory() . '/inc/ajax.php';
 
+
+
 //css styles
 function portfolio_theme_styles() {
 	
@@ -143,18 +145,18 @@ add_action('init', 'portfolio_custom_taxonomies');
 /******* Register Widget Links **********/
 function portfolio_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'hedmark' ),
+		'name'          => esc_html__( 'Sidebar', 'portfolio' ),
 		'id'            => 'sidebar-1',
-		'description'   => esc_html__( 'Sidebar widget areas for blog', 'hedmark' ),
+		'description'   => esc_html__( 'Sidebar widget areas for blog', 'portfolio' ),
 		'before_widget' => '<div id="%1$s" class="sidebar-widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
 		'after_title'   => '</h2><div class="kt-smart-divider"></div>',
 	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Instagram', 'hedmark' ),
+		'name'          => esc_html__( 'Instagram', 'portfolio' ),
 		'id'            => 'footer-a',
-		'description'   => esc_html__('Instagram Widget Area', 'hedmark'),
+		'description'   => esc_html__('Instagram Widget Area', 'portfolio'),
 		'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<h2>',
@@ -171,6 +173,49 @@ include_once( get_template_directory() . '/widgets/kt-latest-posts.php' );
 include_once( get_template_directory() . '/widgets/kt-image-banner.php' );
 include_once( get_template_directory() . '/widgets/kt-code-banner.php' );
 include_once( get_template_directory() . '/widgets/kt-facebook-like.php' );
+
+
+
+
+
+/** 
+Category 
+**/
+
+
+function hedmark_category(){
+	
+	global $hedmark_option;
+	
+	// Category Name
+	
+	echo '<span class="entry-category">'; the_category(', '); echo '</span>';
+        
+}
+
+/**
+===================================
+  Get The First Image From a Post
+ ==================================
+**/
+function hedmark_first_post_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	if( preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches ) ){
+		$first_img = $matches[1][0];
+		return $first_img;
+	}
+}
+
+
+// Excerpt Length
+function hedmark_excerpt_length( $length ) {
+	global $hedmark_option;
+	return $hedmark_option['hedmark_excerpt'];
+}
+add_filter( 'excerpt_length', 'hedmark_excerpt_length' );
 
 
 

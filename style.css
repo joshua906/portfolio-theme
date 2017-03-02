@@ -1054,7 +1054,7 @@ input[type="submit"] {
   letter-spacing: 2px;
   vertical-align: middle;
   position: relative;
-  z-index: 1;
+  z-index: 0;
   -webkit-backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   -webkit-transition: all .4s ease;
@@ -1088,3 +1088,256 @@ input[type="submit"]:hover {
   color: #fff;
   background: #d2a74d;
 }
+
+
+/**
+=========================
+Single social share
+========================= 
+**/
+
+ul.single-social-icons {
+  padding-left: 0 !important;
+}
+
+ul.single-social-icons li {
+  list-style-type: none;
+  display: inline;
+}
+
+ul.single-social-icons li a {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 20px 0 0;
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: 16px;
+  color: #949494;
+  background: #f5f5f5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  transition: all .7s ease
+}
+
+ul.single-social-icons li a:hover {
+  color: #fff;
+  background: #d2a74d;
+}
+
+ul.single-social-icons li:last-child a {
+  margin-right: 0;
+}
+
+.single-share-text {
+  margin-right: 15px;
+  color: #949494;
+  font-style: italic;
+}
+
+
+/**
+========================================
+Comments
+========================================
+**/
+
+#kt-comments {
+  background: #fff;
+  padding: 30px 0;
+  margin-bottom: 100px;
+}
+
+h2.kt-comment-heading {
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+  letter-spacing:1px;
+}
+
+ul.comment-list {
+  margin-left: -40px;
+}
+
+ul.comment-list li {
+  list-style-type: none;
+}
+
+.comment-list .comment-body {
+  position: relative;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+}
+
+.comment-list .comment-body .avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.comment-list .comment-body .reply {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.comment-body p {
+  margin-top: 10px;
+  margin-left: 80px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #595959;
+  font-weight: 300;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.reply {
+  margin: 0;
+}
+
+.reply a {
+  color: #fff;
+  font-size: 12px;
+  background:#d2a74d;
+  padding: 5px 7px;
+  border-radius: 2px;
+}
+
+.reply a:hover {
+  color: #fff;
+  background: #d2a74d;
+  text-decoration: none;
+}
+
+.cancel-comment-reply-link {
+  font-style: normal;
+}
+
+.comment-list .comment-meta {
+  margin-left: 80px;
+}
+
+.comment-list .comment-author,
+.comment-metadata,
+.comment-content {
+  margin-left: 20px;
+}
+
+.comment-content p {}
+
+.comment-list .children {
+    margin-left:30px;
+}
+
+
+@media only screen and (max-width: 480px) {
+	
+	.comment-list .children {
+        margin-left:-30px;
+      }
+
+    .comment-list .children .children {
+	   margin-left:-40px;
+      }
+	  
+	.comment-list .children .children .children {
+	    margin-left:-50px;
+      }
+	
+}
+
+.comment-list .comment-author .fn {
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.comment-list .comment-author .fn a {
+  color: #595959;
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  text-transform: uppercase;
+  
+}
+
+.comment-list .form-submit {
+  margin-bottom: 30px;
+}
+
+.comment-list .comment-meta a {
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: capitalize;
+  color: #949494;
+}
+
+.comment-reply-link,
+.comment-reply-login {
+  font-size: 12px;
+}
+
+.comment-reply-title {
+  color: #595959;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.logged-in-as,
+.comment-notes {
+  color: #949494;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.comment-form-url,
+.comment-form-email,
+.comment-form-author {
+  margin-bottom: 30px;
+  width: 30%;
+  display: inline-block;
+}
+
+.comment-form-email,
+.comment-form-author {
+  margin-right: 4.3%;
+}
+
+.comment-form-url input,
+.comment-form-email input,
+.comment-form-author input,
+.comment-form-comment textarea {
+  outline: none;
+}
+
+.comment-form-author label,
+.comment-form-email label,
+.comment-form-url label,
+.comment-form-comment label {
+  letter-spacing:1px;
+  font-size: 13px;
+  font-weight:normal;
+  text-transform: uppercase;
+}
+
+.comment-form-comment textarea {
+  margin-bottom: 30px;
+  height: 150px;
+  margin: 0;
+}
+
+.form-allowed-tags,
+.comment-author .says {
+  display: none;
+}
+

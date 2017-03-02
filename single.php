@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+	<div class="main-hero">
 		<div class="container-post">
 		<div class="col-md-12">
           
@@ -75,5 +76,6 @@
 	
       </div> <!-- end of row -->
     </div>  <!-- end of main page content's container -->
+</div>
 </div>
 <?php get_footer(); ?>
