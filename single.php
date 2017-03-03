@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+global $hedmark_option;
+
+get_header(); ?>
 	<div class="main-hero">
 		<div class="container-post">
 		<div class="col-md-12">

@@ -219,9 +219,36 @@ add_filter( 'excerpt_length', 'hedmark_excerpt_length' );
 
 
 
+/**
+===================================
+  Get The First Image From a Post
+ ==================================
+**/
+function portfolio_first_post_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	if( preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches ) ){
+		$first_img = $matches[1][0];
+		return $first_img;
+	}
+}
+
+// Excerpt Length
 
 
+function portfolio_excerpt_length( $length ) {
+	global $hedmark_option;
+	return $hedmark_option['portfolio_excerpt'];
+}
+add_filter( 'excerpt_length', 'portfolio_excerpt_length' );
 
+// Excerpt more
+function portfolio_excerpt_more( $more ) {
+	return '...';
+}
+add_filter( 'excerpt_more', 'portfolio_excerpt_more' );
 
 
 ?>

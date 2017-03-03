@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+<?php 
+
+global $hedmark_option;
+
+get_header(); ?>
 <!-- blog header -->
 <div class="main-hero">
 			<div class="container">
