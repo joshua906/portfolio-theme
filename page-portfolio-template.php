@@ -56,6 +56,14 @@ get_header(); ?>
 		</div>
 		</div>
 		
-
+		<div class="caption">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<a href="behance.net"><button>More Projects Here</button></a>
+				</div>
+			</div>
+		</div>
+		</div>
 	
 <?php get_footer(); ?>
